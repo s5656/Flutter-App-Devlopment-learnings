@@ -76,9 +76,11 @@ class _State extends State<MyApp>{
       body: Container(
         padding: EdgeInsets.all(12.0),
         child: Center(
-          child: Column(
-              children: List<Widget>.from(widgetList),
-            ),
+          child: SingleChildScrollView(
+            child: Column(
+                children: List<Widget>.from(widgetList),
+              ),
+          ),
         ),
       ));
 
